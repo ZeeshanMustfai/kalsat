@@ -1,3 +1,4 @@
+import { Card } from '@mui/material'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Page404 from './components/404page'
@@ -28,7 +29,6 @@ function App() {
 					path='*'
 					element={
 						<Sidebar>
-							{' '}
 							<Page404 />
 						</Sidebar>
 					}

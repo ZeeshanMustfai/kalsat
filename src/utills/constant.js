@@ -1,8 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import DashboardIcon from '@mui/icons-material/Dashboard'
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
-import AddBoxIcon from '@mui/icons-material/AddBox'
-import CategoryIcon from '@mui/icons-material/Category'
+import { AboutIcon, ContactIcon, DashboardIcon } from '../assets'
 export const sidebarTabsList = [
 	{
 		text: 'Dashboard',
@@ -14,13 +11,13 @@ export const sidebarTabsList = [
 		text: 'Contact',
 		key: 'contact',
 		sub: false,
-		icon: AddBoxIcon,
+		icon: ContactIcon,
 	},
 	{
 		text: 'About',
 		key: 'about',
 		sub: false,
-		icon: CategoryIcon,
+		icon: AboutIcon,
 	},
 ]
 

@@ -98,17 +98,18 @@ export default function Sidebar({ children }, props) {
 							fontSize: '28px',
 							lineHeight: '28px',
 							color: '#333333',
+							flex: 9,
 						}}
 					>
 						Registration
 					</Typography>
 
-					{/* <Box>
+					<Box sx={{ flex: 1 }}>
 						<IconButton sx={{ p: 0 }}>
 							<Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
 						</IconButton>
-						<Badge color='secondary' badgeContent={1}></Badge>
-					</Box> */}
+						{/* <Badge color='secondary' badgeContent={1}></Badge> */}
+					</Box>
 				</Toolbar>
 			</AppBar>
 			<Box
@@ -127,7 +128,6 @@ export default function Sidebar({ children }, props) {
 					sx={{
 						display: { xs: 'block', sm: 'none' },
 						'& .MuiDrawer-paper': {
-							boxSizing: 'border-box',
 							width: drawerWidth,
 						},
 					}}
@@ -146,7 +146,6 @@ export default function Sidebar({ children }, props) {
 					sx={{
 						display: { xs: 'none', sm: 'block' },
 						'& .MuiDrawer-paper': {
-							boxSizing: 'border-box',
 							width: drawerWidth,
 						},
 					}}

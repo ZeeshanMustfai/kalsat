@@ -15,14 +15,15 @@ export const theme = createTheme({
 		},
 	},
 
-	// components: {
-	// 	MuiToolbar: {
-	// 		styleOverrides: {
-	// 			dense: {
-	// 				height: 32,
-	// 				minHeight: 32,
-	// 			},
-	// 		},
-	// 	},
-	// },
+	components: {
+		MuiTextField: {
+			styleOverrides: {
+				root: {
+					background: '#ffffff',
+					borderRadius: '6px',
+					border: '1px solid #fff',
+				},
+			},
+		},
+	},
 })

@@ -51,7 +51,12 @@ const NavItem = (props) => {
 		<List>
 			<ListItemIcon
 				className='app-logo'
-				sx={{ textAlign: 'center', width: '100%' }}
+				sx={{
+					textAlign: 'center',
+					width: '100%',
+					paddingTop: '25px',
+					paddingBottom: '25px',
+				}}
 			>
 				<img src={appLogo} alt='app-logo' />
 			</ListItemIcon>

@@ -1,0 +1,20 @@
+.sidebar-tab-text {
+  text-transform: capitalize;
+  color: white !important;
+}
+
+.active-tab {
+  width: auto !important;
+  color: white !important;
+  text-transform: capitalize;
+  border-right: 2px solid #5579F7;
+}
+
+.black_icon {
+  filter: brightness(0) invert(0);
+}
+
+.white_icon {
+  filter: brightness(0) invert(1);
+  color: #fff !important;
+}

@@ -7,7 +7,6 @@
   width: auto !important;
   color: white !important;
   text-transform: capitalize;
-  border-right: 2px solid #5579F7;
 }
 
 .black_icon {
@@ -17,4 +16,27 @@
 .white_icon {
   filter: brightness(0) invert(1);
   color: #fff !important;
+}
+
+.active-tab-indicator {
+  position: absolute;
+  right: -15px;
+  width: 24px;
+  height: 24px;
+  background: #FAFAFA;
+  border-radius: 50%;
+}
+.indicator-wrapper {
+  position: relative;
+}
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #5579F7;
+  top: 50%;
+  transform: translateY(227%);
+  margin-left: 4px;
+  border-radius: 50%;
+
 }

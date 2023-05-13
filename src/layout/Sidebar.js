@@ -11,6 +11,7 @@ import { BrowserView, MobileView } from 'react-device-detect'
 import './sidebar.scss'
 import NavItem from './NavItem'
 import { makeStyles, useTheme } from '@mui/styles'
+import { BellIcon, PersonIcon, SearchIcon } from '../assets'
 const drawerWidth = 240
 
 const AppBar = styled(MuiAppBar, {
@@ -105,10 +106,9 @@ export default function Sidebar({ children }, props) {
 					</Typography>
 
 					<Box sx={{ flex: 1 }}>
-						<IconButton sx={{ p: 0 }}>
-							<Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
-						</IconButton>
-						{/* <Badge color='secondary' badgeContent={1}></Badge> */}
+						<SearchIcon style={{ marginRight: '14px', cursor: 'pointer' }} />
+						<BellIcon style={{ marginRight: '14px', cursor: 'pointer' }} />
+						<PersonIcon style={{ cursor: 'pointer' }} />
 					</Box>
 				</Toolbar>
 			</AppBar>
@@ -123,7 +123,7 @@ export default function Sidebar({ children }, props) {
 					open={mobileOpen}
 					onClose={handleDrawerToggle}
 					ModalProps={{
-						keepMounted: true, // Better open performance on mobile.
+						keepMounted: true,
 					}}
 					sx={{
 						display: { xs: 'block', sm: 'none' },
@@ -141,6 +141,7 @@ export default function Sidebar({ children }, props) {
 						sx: {
 							background: '#5579F7',
 							borderRadius: '20px',
+							borderRight: 0,
 						},
 					}}
 					sx={{

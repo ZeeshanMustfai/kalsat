@@ -1,5 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { AboutIcon, ContactIcon, DashboardIcon } from '../assets'
+import {
+	AboutIcon,
+	ContactIcon,
+	DashboardIcon,
+	LogoutIcon,
+	SettingIcon,
+} from '../assets'
 export const sidebarTabsList = [
 	{
 		text: 'Dashboard',
@@ -18,6 +24,21 @@ export const sidebarTabsList = [
 		key: 'about',
 		sub: false,
 		icon: AboutIcon,
+	},
+]
+
+export const sidebarBottomList = [
+	{
+		text: 'Setting',
+		key: 'setting',
+		sub: false,
+		icon: SettingIcon,
+	},
+	{
+		text: 'Logout',
+		key: 'logout',
+		sub: false,
+		icon: LogoutIcon,
 	},
 ]
 
